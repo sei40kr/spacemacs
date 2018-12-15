@@ -45,8 +45,9 @@
   (use-package json-reformat
     :defer t
     :init
-    (spacemacs/set-leader-keys-for-major-mode 'json-mode
-      "=" 'spacemacs/json-reformat-dwim)))
+    (when (eq json-fmt-tool 'json-reformat)
+      (spacemacs/set-leader-keys-for-major-mode 'json-mode
+        "=" 'spacemacs/json-reformat-dwim))))
 
 (defun json/init-json-snatcher ()
   (use-package json-snatcher

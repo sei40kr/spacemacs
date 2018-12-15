@@ -12,4 +12,4 @@
 ;; Variables
 
 (defvar json-fmt-tool 'web-beautify
-  "The formatter to format a JSON file. Possible values are `web-beautify' and `prettier'.")
+  "The formatter to format a JSON file. Possible values are `json-reformat', `web-beautify' and `prettier'.")
