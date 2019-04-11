@@ -14,12 +14,9 @@
 This layer integrates basic container management into Spacemacs.
 
 ** Features:
-- Syntax highlighting for =Docker= files
-- =Docker= build integration
 - =TRAMP= access to running Docker containers
 - =Docker= container and image management via [[https://github.com/Silex/docker.el][docker.el]]
 - =docker-compose= integration via [[https://github.com/Silex/docker.el][docker.el]]
-- Syntax checking via [[https://github.com/hadolint/hadolint][hadolint]]
 
 * Install
 To use this configuration layer, add it to your =~/.spacemacs=. You will need to
@@ -42,8 +39,6 @@ auto-completion of the running containers.
 
 | Key binding | Description                                 |
 |-------------+---------------------------------------------|
-| ~SPC m c b~ | build current buffer                        |
-| ~SPC m c B~ | build current buffer without cache          |
 | ~SPC a D c~ | list docker containers                      |
 | ~SPC a D C~ | docker-compose commands for current project |
 | ~SPC a D d~ | delete image                                |

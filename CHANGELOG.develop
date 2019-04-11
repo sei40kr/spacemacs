@@ -1141,6 +1141,7 @@ Other:
   - Added ~SPC m c B~ to build image without cache (thanks to Maximilian Wolff)
   Henar)
   - Added ~SPC a D C~ for =docker-compose= (thanks to Daniel Caixinha)
+  - Moved =dockerfile-mode= to a separated layer =+lang/dockerfile=
 - Fix: broken package declaration for dockerfile-mode (thanks to Maximilian Wolff)
 **** Elfeed
 - Fixed selection bindings in visual state (thanks to Jeremy Symon)

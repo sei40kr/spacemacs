@@ -1,0 +1,32 @@
+#+TITLE: Docker layer
+
+[[file:img/docker.png]]
+
+* Table of Contents                     :TOC_4_gh:noexport:
+- [[#description][Description]]
+  - [[#features][Features:]]
+- [[#install][Install]]
+- [[#key-bindings][Key bindings]]
+
+* Description
+This layer supports Dockerfile development in Spacemacs.
+
+** Features:
+- Syntax highlighting for =Docker= files
+- =Docker= build integration
+- Syntax checking via [[https://github.com/hadolint/hadolint][hadolint]]
+
+* Install
+To use this configuration layer, add it to your =~/.spacemacs=. You will need to
+add =dockerfile= to the existing =dotspacemacs-configuration-layers= list in this
+file.
+
+You will also need the native package [[https://www.docker.com/][Docker]] for the build integration.
+For syntax checking the external library =hadolint= is also necessary.
+
+* Key bindings
+
+| Key binding | Description                                 |
+|-------------|---------------------------------------------|
+| ~SPC m c b~ | build current buffer                        |
+| ~SPC m c B~ | build current buffer without cache          |
