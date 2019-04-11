@@ -73,20 +73,19 @@
   (spacemacs/declare-prefix-for-mode mode "mi" "import")
   (spacemacs/set-leader-keys-for-major-mode mode
     "if" #'spacemacs/import-js-fix
-    "ii" #'spacemacs/import-js-import
-    "gi" #'import-js-goto))
+    "ii" #'spacemacs/import-js-import))
 
 (defun spacemacs/import-js-fix ()
   (interactive)
-  (require 'import-js)
   (import-js-fix)
+
   (if (bound-and-true-p flycheck-mode)
       (flycheck-buffer)))
 
 (defun spacemacs/import-js-import ()
   (interactive)
-  (require 'import-js)
   (import-js-import)
+
   (if (bound-and-true-p flycheck-mode)
       (flycheck-buffer)))
 
