@@ -23,7 +23,9 @@
         git-timemachine
         golden-ratio
         (helm-git-grep :requires helm)
-        (helm-gitignore :requires helm)
+        (helm-gitignore :requires helm
+                        :location (recipe :fetcher github
+                                          :repo "sei40kr/helm-gitignore"))
         magit
         magit-gitflow
         magit-svn
